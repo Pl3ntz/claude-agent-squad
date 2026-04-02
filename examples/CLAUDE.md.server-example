@@ -1,0 +1,25 @@
+# Infrastructure — Server Knowledge Template
+
+## Servers
+
+| Alias | IP | Access |
+|-------|-----|--------|
+| my-server | 1.2.3.4 | ssh my-server |
+
+## Projects
+
+| Project | Path | Stack | Services | Ports | DB |
+|---------|------|-------|----------|-------|-----|
+| my-app | /root/my-app | Python/FastAPI | my-app-backend | 8000 | mydb |
+
+## Shared Resources
+
+| Resource | Scope | Risk |
+|----------|-------|------|
+| PostgreSQL | ALL projects | CRITICAL |
+| Nginx | ALL | CRITICAL |
+
+## Conventions
+- Deploy: git pull → restart
+- Logs: journalctl -u <service>
+- Health: curl localhost:<port>/health

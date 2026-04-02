@@ -1,0 +1,13 @@
+# Production Gate Configuration
+# Copy this file to ~/.claude/hooks/production-gate.conf
+# and fill in YOUR server details
+#
+# This file is .gitignored — your real values stay local
+
+# SSH aliases and IPs for your production server (pipe-separated, regex-escaped)
+# Example: my-server|my-alias|123\.456\.789\.0
+PROD_ALIASES=your-server|your-alias|your\.server\.ip
+
+# Grep pattern for fast-path detection (simpler version)
+# Example: my-server|123\.456
+PROD_GREP=your-server|your\.server\.ip

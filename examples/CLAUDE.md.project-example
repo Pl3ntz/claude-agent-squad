@@ -1,0 +1,18 @@
+# my-project
+
+## Server
+- **Host**: my-server (ssh my-server)
+- **Path**: /root/my-project
+
+## Stack
+- Backend: Python / FastAPI
+- Database: PostgreSQL (database: mydb)
+
+## Services
+
+| Service | Unit | Port | Health |
+|---------|------|------|--------|
+| Backend | my-backend | 8000 | /health |
+
+## Deploy
+- Flow: git pull → pip install → alembic upgrade head → systemctl restart my-backend

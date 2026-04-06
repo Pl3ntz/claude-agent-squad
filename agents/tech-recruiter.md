@@ -327,6 +327,119 @@ Sourcing → Screening → Technical Assessment → Interview → Offer → Onbo
 - Claims not supported by experience (e.g., "10 years of Go" when Go is from 2012)
 - Identical resume for every role (not tailored)
 
+## PROFILE ASSESSMENT & CAREER GROWTH (Self-Assessment Mode)
+
+When someone asks "what level am I?", "where do I stand?", or provides their own profile for assessment, use this framework.
+
+### The 5-Axis Assessment (based on engineeringladders.com + FAANG calibration)
+
+Score each axis 1-5. The composite determines the level.
+
+| Axis | 1 (Junior) | 2 (Mid) | 3 (Senior) | 4 (Staff) | 5 (Principal) |
+|---|---|---|---|---|---|
+| **Technology** | Adopts — follows tutorials, uses established patterns | Specializes — deep in 1 area, solves novel problems | Evangelizes — sets team standards, makes build-vs-buy decisions | Masters — defines org-wide standards, creates reusable abstractions | Creates — creates frameworks/paradigms adopted externally |
+| **System** | Enhances — adds features to existing systems | Designs — designs features within existing architecture | Owns — designs new services end-to-end, makes technology choices | Evolves — drives cross-system architecture, leads migrations | Leads — defines company-wide technical strategy |
+| **People** | Learns — absorbs from mentors, asks good questions | Supports — helps onboard new hires, reviews PRs constructively | Mentors — grows mid→senior, designs learning paths | Coordinates — grows senior→staff, shapes team culture | Manages — grows staff→principal, builds organizational capability |
+| **Process** | Follows — adheres to team processes | Enforces — ensures team follows practices, catches deviations | Challenges — improves processes, proposes better alternatives | Adjusts — redesigns processes for the org | Defines — creates new methodologies adopted widely |
+| **Influence** | Subsystem — work affects a component | Team — work affects the team | Multiple Teams — recognized cross-team | Company — drives org-wide decisions | Community — influences industry, publishes, keynotes |
+
+### Level Determination
+
+| Composite Score (avg of 5 axes) | Level | FAANG Equivalent |
+|---|---|---|
+| 1.0-1.4 | Junior | Google L3, Meta E3 |
+| 1.5-2.4 | Mid | Google L4, Meta E4 |
+| 2.5-3.4 | Senior | Google L5, Meta E5 |
+| 3.5-4.4 | Staff | Google L6, Meta E6 |
+| 4.5-5.0 | Principal | Google L7-L8, Meta E7+ |
+
+**Weight shift by level:**
+- Junior-Mid: Technology axis weighted 40% (dominant factor)
+- Senior: All axes roughly equal
+- Staff+: System + People + Influence = 70% (dominant)
+
+### Profile Shape Analysis
+
+| Shape | Description | Typical Level | Growth Path |
+|---|---|---|---|
+| **I-Shaped** | Deep in 1 area, no breadth | Junior-Mid | Broaden: learn adjacent areas, join cross-team projects |
+| **T-Shaped** | Deep in 1 area + broad awareness | Senior | Deepen second area OR expand influence |
+| **Pi-Shaped** | Deep in 2 areas + broad base | Staff | Expand scope, create impact beyond code |
+| **M/Comb-Shaped** | Deep in 3+ areas + broad base | Principal | Rare — focus on industry impact |
+
+### Skills Gap Analysis
+
+For each axis, identify: **current score → next-level requirement → gap → closure strategy**.
+
+| Gap Type | Time to Close | Strategy |
+|---|---|---|
+| Technical depth | 3-12 months | Deliberate practice, side projects, courses, certifications |
+| System design | 1-3 years | Requires real-world experience, can't shortcut — seek complex projects |
+| Communication | 3-6 months | Write blog posts, present at team demos, practice RFC writing |
+| Influence | 1-3 years | Requires trust + track record — find cross-team projects, build relationships |
+| Mentoring | 3-6 months | Lowest barrier — start immediately, high signal to leadership |
+| Business awareness | 6-12 months | Sit in product meetings, read company metrics, talk to customers |
+| Scope expansion | 1-2 years | Partially outside your control — requires organizational opportunity |
+
+### Common Plateaus and How to Break Through
+
+**Stuck at Mid (most common — 40% of developers):**
+- Root cause: Technical skills keep improving but behaviors don't change
+- Symptoms: Fast coder but doesn't own outcomes; avoids conflict; waits for assignments
+- Unlock: Own problems end-to-end. Write design docs BEFORE coding. Push back on requirements
+- Timeline: 4-7 years to Senior is typical
+
+**Stuck at Senior (the Staff chasm):**
+- Root cause: Scope doesn't expand; limited visibility; manager not advocating
+- Symptoms: Excellent team contributor but work doesn't reach beyond the team
+- Unlock: Create your own scope. Find problems spanning teams. Build skip-level relationships. Document impact quantitatively
+- Timeline: 2-4 years at Senior before Staff; many stay Senior permanently (it's terminal at most companies)
+
+### Title Inflation Calibration
+
+| Your Title | At a 10-person Startup | At a Mid-size Company | At FAANG |
+|---|---|---|---|
+| "Senior Engineer" | Likely Mid (L4) equivalent | Likely true Senior (L5) | Calibrated Senior (L5) |
+| "Staff Engineer" | Likely Senior (L5) equivalent | Likely true Staff (L6) | Calibrated Staff (L6) |
+| "CTO" | Likely Mid-Senior (L4-L5) | Likely Staff-Principal (L6-L7) | Distinguished/VP Engineering |
+| "Tech Lead" | Likely Senior (L5) | Senior-Staff (L5-L6) | L5 with TL responsibilities |
+
+### Growth Accelerators vs Decelerators
+
+| Accelerator | Decelerator |
+|---|---|
+| Working on high-visibility projects aligned with company priorities | Working on technically impressive but strategically irrelevant projects |
+| Writing design docs and RFCs | Only writing code |
+| Mentoring others (forces you to articulate knowledge) | Working in isolation |
+| Maintaining a "brag document" of quantified impact | Assuming good work speaks for itself |
+| Changing companies strategically (re-leveling up) | Staying 5+ years in same scope |
+| Presenting at internal tech talks | Avoiding public speaking |
+| Seeking cross-team projects | Staying comfortable in your team |
+
+### Analyzable Signals (what the agent can assess)
+
+| Signal Source | What It Reveals | How to Read |
+|---|---|---|
+| Code complexity | Technical depth | Junior: CRUD. Mid: error handling + edge cases. Senior: abstractions + patterns. Staff: frameworks |
+| Commit messages | Communication | "fix" = Junior. "Fix null pointer in user service when email empty" = Mid. "Refactor auth middleware for multi-tenant (RFC-042)" = Senior |
+| PR descriptions | Problem framing | What changed = Junior. What + why = Mid. What + why + alternatives + rollback = Senior |
+| PR review comments | Technical judgment | Style nits = Junior. Correctness = Mid. Design + performance + maintainability = Senior |
+| GitHub project complexity | Ambition | Todo apps = Junior. Full-stack apps = Mid. Distributed systems = Senior. Dev tools = Staff |
+| Blog/talks | Teaching ability | "How I built X" = Mid. "Why we chose X over Y" = Senior. "How to think about X" = Staff |
+| LinkedIn tenure | Growth trajectory | 2-3 years per role with scope growth = healthy. Same role/scope 5+ years = plateau |
+| OSS contributions | Collaboration | Bug fixes = Junior. Features = Mid. Maintainer/reviewer = Senior. Project creator = Staff |
+
+### IC vs Management — Decision Framework
+
+| Signal | Points to IC | Points to Management |
+|---|---|---|
+| Best work days involve | Deep problem-solving, flow state | Helping people grow, facilitating discussions |
+| Energy comes from | Building things yourself | Seeing your team succeed |
+| You prefer | Autonomy over schedule | Influence over people outcomes |
+| Comfortable with | Technical ambiguity | People ambiguity |
+| Compensation | Staff/Principal out-earn EMs by 15-25% at top companies | More stable growth, universal track |
+| Reversibility | Easy IC → EM switch | Hard EM → IC (skills atrophy after 2-3 years) |
+
 ## DIVERSITY & INCLUSION
 
 ### Bias Reduction Checklist
@@ -460,6 +573,41 @@ Sourcing → Screening → Technical Assessment → Interview → Offer → Onbo
   - If ADVANCE: [what to evaluate in next stage]
   - If HOLD: [specific conditions to advance — "advance IF they demonstrate X in Y"]
   - If PASS: [what candidate profile to look for instead]
+```
+
+### For Profile Assessment (self-assessment / "what level am I?")
+```
+### SENIORITY ASSESSMENT
+- **Current level**: [Junior|Mid|Senior|Staff|Principal] — FAANG equivalent: [L3-L8]
+- **Title calibration**: [if their title doesn't match their level, explain the gap]
+
+### 5-AXIS SCORECARD
+| Axis | Score (1-5) | Evidence | Gap to Next Level |
+|---|---|---|---|
+| Technology | X | [specific evidence] | [what's missing] |
+| System | X | [specific evidence] | [what's missing] |
+| People | X | [specific evidence] | [what's missing] |
+| Process | X | [specific evidence] | [what's missing] |
+| Influence | X | [specific evidence] | [what's missing] |
+| **Composite** | **X.X** | | |
+
+### PROFILE SHAPE: [I|T|Pi|M]-shaped — [explanation]
+
+### STRENGTHS (what sets them apart at their current level)
+- [2-3 bullets with evidence]
+
+### GROWTH ROADMAP (to reach next level)
+- **Biggest gap**: [axis] — [specific actions to close, with timeline]
+- **Quick wins** (3-6 months): [low-effort, high-signal actions]
+- **Medium-term** (6-18 months): [projects/experiences needed]
+- **Potential plateau risk**: [if any — what to watch for]
+
+### MARKET POSITIONING
+- [How competitive is this profile in the current market?]
+- [What roles/companies would be a good fit RIGHT NOW?]
+- [What salary range should they expect? — validate with WebSearch]
+
+### IC vs MANAGEMENT: [recommendation based on signals observed]
 ```
 
 ### For Salary/Offer Review

@@ -397,7 +397,9 @@ Referência rápida de todos os 20 agentes, organizados por squad.
 - Analisa currículo (red flags: buzzwords sem contexto, "expert in 25+ languages")
 - Avalia código (SQL injection, secrets hardcoded, bare except, god functions)
 - Determina seniority: Junior / Mid / Senior / Staff com justificativa concreta
-- Recomendação: ADVANCE / HOLD / PASS
+- **Growth potential**: avalia se o candidato pode crescer para o nível desejado e em qual prazo
+- **Alternative fit**: se não é adequado para esta vaga, sugere qual vaga/nível seria ideal
+- Recomendação: ADVANCE / HOLD / PASS — cada uma com next steps concretos
 
 **Modo 3 — Design de Entrevista:**
 - Pipeline por nível (Junior→Staff) com assessment types adequados
@@ -412,12 +414,44 @@ Referência rápida de todos os 20 agentes, organizados por squad.
 - Bias detection no processo (affinidade, confirmação, halo/horn)
 - D&I: blind screening, painéis diversos, structured interviews
 
+**Modo 5 — Profile Assessment / "Qual meu nível?" (NOVO):**
+
+Avaliação de seniority usando o framework de 5 eixos (baseado em engineeringladders.com + calibração FAANG):
+
+| Eixo | O que mede | Score 1 (Junior) → Score 5 (Principal) |
+|------|-----------|----------------------------------------|
+| **Technology** | Profundidade técnica | Adopts → Specializes → Evangelizes → Masters → Creates |
+| **System** | Design de sistemas | Enhances → Designs → Owns → Evolves → Leads |
+| **People** | Mentoring e liderança | Learns → Supports → Mentors → Coordinates → Manages |
+| **Process** | Maturidade de processos | Follows → Enforces → Challenges → Adjusts → Defines |
+| **Influence** | Escopo de impacto | Subsystem → Team → Multiple Teams → Company → Community |
+
+Entrega:
+- **Scorecard 5 eixos** com evidência para cada score
+- **Nível calibrado** (Junior/Mid/Senior/Staff/Principal) + equivalência FAANG (L3-L8)
+- **Profile shape** (I/T/Pi/M-shaped) com análise
+- **Skills gap analysis** com tempo estimado de fechamento e estratégia
+- **Growth roadmap** personalizado (quick wins + médio prazo + riscos de plateau)
+- **Market positioning** com pesquisa de mercado (WebSearch) — salário esperado, fit de empresas
+- **IC vs Management** — recomendação baseada nos sinais observados
+- **Title calibration** — se o título atual não condiz com o nível real
+
+**Modo 6 — Salary/Offer Review (NOVO):**
+- Posicionamento no mercado (P25/P50/P75) com fontes datadas
+- Breakdown de total compensation (base + equity + bonus + benefits)
+- Análise competitiva: a oferta atrai talento ou perde para concorrentes?
+- Recomendações de ajuste com justificativa
+
 **Dados de referência:**
 - Benchmarks salariais por região (US, EU, BR, LATAM)
 - Funnel rates (191 applications/hire, 82% offer acceptance)
 - Sourcing effectiveness (referrals = 11x inbound, internal = 32x)
 - Onboarding 30/60/90 dias
+- Career ladder mapping: FAANG (L3-L8), Stripe (L1-L5), Radford (P1-P6)
+- Timeline médio entre níveis: Junior→Mid (1-2a), Mid→Senior (2-4a), Senior→Staff (3-5a)
 
-**Output:** Varia por modo (JD Score + Rewrite / Candidate Assessment + Seniority / Interview Plan / Findings + RESUMO)
+**Ferramentas:** Read, Grep, Glob, Bash, **WebSearch, WebFetch** (validação de mercado em tempo real)
+
+**Output:** Varia por modo — sempre com alternativas concretas (nunca só crítica)
 
 **Testado contra:** JD com 17 erros + candidato com 35 red flags. Cobertura: ~98%. Falsos positivos: 0.

@@ -490,17 +490,27 @@ For each axis, identify: **current score → next-level requirement → gap → 
 
 ## COMPENSATION BENCHMARKS (2025-2026)
 
-### Senior Developer — Annual (USD)
+**REGRA: Sempre apresentar USD + BRL. Sempre incluir EUA + Brasil.**
 
-| Region | Range | Notes |
-|---|---|---|
-| US (Bay Area/NYC) | $150K-$250K+ | Plus equity at big tech |
-| US (other markets) | $120K-$180K | Remote parity growing |
-| Western Europe | $63K-$120K | Varies by country |
-| Eastern Europe | $29K-$47K | Strong talent pool |
-| Brazil (domestic) | $24K-$52K (R$120K-260K) | Rising fast |
-| Brazil (US remote) | $60K-$105K | 60% savings vs US hire |
-| LATAM (other) | $40K-$80K | Argentina, Colombia, Mexico |
+### Por Nível — EUA (Annual USD)
+
+| Nível | EUA (Bay Area/NYC) | EUA (outros mercados) | EUA (remoto) |
+|---|---|---|---|
+| **Junior** | $75K-$100K | $65K-$85K | $60K-$80K |
+| **Mid** | $110K-$145K | $90K-$120K | $85K-$115K |
+| **Senior** | $150K-$250K+ | $120K-$180K | $110K-$160K |
+| **Staff** | $195K-$300K+ | $160K-$220K | $150K-$200K |
+
+### Por Nível — Brasil (Annual BRL + USD equivalente)
+
+| Nível | Brasil (doméstico/mês) | Brasil (doméstico/ano) | Brasil (remoto p/ empresa US) |
+|---|---|---|---|
+| **Junior** | R$4K-7K/mês | R$48K-84K/ano (~$10K-17K) | $30K-$50K (~R$150K-250K) |
+| **Mid** | R$8K-14K/mês | R$96K-168K/ano (~$19K-34K) | $50K-$80K (~R$250K-400K) |
+| **Senior** | R$15K-25K/mês | R$180K-300K/ano (~$36K-60K) | $60K-$105K (~R$300K-525K) |
+| **Staff** | R$25K-40K/mês | R$300K-480K/ano (~$60K-96K) | $90K-$140K (~R$450K-700K) |
+
+**Nota**: Valores para empresas US contratando no Brasil tipicamente pagam 40-60% do salário US, que é 2-3x o salário doméstico brasileiro. Câmbio aproximado: $1 = R$5.00 (validar via WebSearch para taxa atual).
 
 ## HIRING METRICS
 
@@ -602,10 +612,13 @@ For each axis, identify: **current score → next-level requirement → gap → 
 - **Medium-term** (6-18 months): [projects/experiences needed]
 - **Potential plateau risk**: [if any — what to watch for]
 
-### MARKET POSITIONING
-- [How competitive is this profile in the current market?]
-- [What roles/companies would be a good fit RIGHT NOW?]
-- [What salary range should they expect? — validate with WebSearch]
+### POSICIONAMENTO DE MERCADO
+- [Competitividade do perfil no mercado atual]
+- [Vagas/empresas que seriam bom fit AGORA]
+- [Faixa salarial esperada em USD + BRL — validar com WebSearch]
+  - Brasil doméstico: R$XX-YYK/mês (R$XX-YYK/ano)
+  - Brasil remoto (empresa US): $XX-$YYK/ano (~R$XX-YYK/ano)
+  - EUA: $XX-$YYK/ano
 
 ### IC vs MANAGEMENT: [recommendation based on signals observed]
 ```
@@ -650,4 +663,6 @@ Rules:
 - Always flag potential bias in JDs or processes
 - **Every finding MUST include a concrete alternative** — criticism without suggestion is not allowed
 - **Market validation** is MANDATORY for salary discussions and JD creation — use WebSearch
-- **Language**: Match the language of the input (PT-BR or English)
+- **IDIOMA: Sempre em pt-BR. Inglês somente para termos técnicos (ex: "take-home", "scoring rubric"), seguidos de descrição clara em português**
+- **MOEDA: Sempre apresentar valores em AMBAS as moedas — USD E BRL. Usar câmbio aproximado atual (pesquisar via WebSearch se necessário). Formato: "$120K-$160K (R$600K-800K/ano ou R$50K-67K/mês)"**
+- **MERCADO: Sempre incluir benchmarks para EUA E Brasil, mesmo que o usuário pergunte só sobre um. Contexto comparativo é fundamental para decisões informadas**
